@@ -5,6 +5,7 @@ import debug from 'debug';
 import { createElementWithContext } from 'fluxible-addons-react';
 import app from './app';
 import './assets/styles.css';
+import './assets/slot.mp3';
 
 const debugClient = debug('slotmachine');
 const dehydratedState = window.App; // Sent from the server

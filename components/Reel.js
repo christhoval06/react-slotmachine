@@ -16,7 +16,7 @@ class Reel extends React.Component {
 
     handleSlider() {
     	const { top, selected } = this.state;
-    	const { roundsBeforeReveal, reels, handlefinish } = this.props;
+    	const { roundsBeforeReveal, reels, handleFinish } = this.props;
 
 		if (top < -525) {
 			this.roundsBeforeReveal++;
@@ -26,7 +26,7 @@ class Reel extends React.Component {
 			const selectedIndex = reels.indexOf(selected);
 			if ( top == - (selectedIndex * 175)) {
 				clearInterval(this.timer);
-				handlefinish();
+				handleFinish();
 				return;
 			}
 		}

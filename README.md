@@ -14,6 +14,6 @@ $ npm install
 // run
 $ npm run dev
 
-//hit
+// hit & Sound on :)
 http://localhost:3000/
 ```

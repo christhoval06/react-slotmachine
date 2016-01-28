@@ -15,7 +15,7 @@ class Home extends React.Component {
 	constructor(props) {
         super(props);
         
-        bindMethods(this, ['handleleverpull','handlefinish','handleCheat']);
+        bindMethods(this, ['handleLeverPull','handleFinish','handleCheat']);
 
         this.state = {
         	selected: [],
@@ -30,7 +30,7 @@ class Home extends React.Component {
         };
     }
 
-    handleleverpull() {
+    handleLeverPull() {
     	const randomPattern = [ Math.floor(Math.random() * 3), Math.floor(Math.random() * 3), Math.floor(Math.random() * 3) ];
     	const reels = this.state.reels;
     	
@@ -48,7 +48,7 @@ class Home extends React.Component {
         });
     }
 
-    handlefinish() {
+    handleFinish() {
     	if (this.state.reelsRotated == 3) {
     		React.findDOMNode(this.refs.audio).pause();
     		this.setState({
@@ -87,7 +87,7 @@ class Home extends React.Component {
 					running={running}
 					selected={selected[0]}
 					speed={3}
-					handlefinish={this.handlefinish}
+					handleFinish={this.handleFinish}
 					leftPos='85px'/>
 				<Reel 
 					reels={reels[1]} 
@@ -95,7 +95,7 @@ class Home extends React.Component {
 					running={running} 
 					selected={selected[1]}
 					speed={2}
-					handlefinish={this.handlefinish}
+					handleFinish={this.handleFinish}
 					leftPos='140px'/>
 				<Reel 
 					reels={reels[2]}
@@ -103,9 +103,9 @@ class Home extends React.Component {
 					running={running}
 					selected={selected[2]}
 					speed={1.5}
-					handlefinish={this.handlefinish}
+					handleFinish={this.handleFinish}
 					leftPos='190px'/>
-				<Lever handlePull={this.handleleverpull} handleCheat={this.handleCheat}/>
+				<Lever handlePull={this.handleLeverPull} handleCheat={this.handleCheat}/>
 				<audio ref='audio' autoStart={0} autoPlay={0}>
 					<source src="/public/js/7a3219f46e0f5a3211676048e7734217.mp3" type="audio/mpeg"/>
 					Your browser does not support the audio element.
