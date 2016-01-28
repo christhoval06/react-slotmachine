@@ -1,0 +1,49 @@
+/**
+ * This file is provided by Facebook for testing and evaluation purposes
+ * only. Facebook reserves all rights not expressly granted.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+ * FACEBOOK BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+ * AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+ 
+.slot {
+  background: #ffffff url("http://l.yimg.com/dh/ap/default/160123/slot.png") no-repeat;
+  position: absolute;
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.reel {
+  position: relative;
+  display: inline-block;
+  top: 335px;
+  width: 145px;
+  height: 175px;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  width: 145px;
+}
+
+.lever {
+  position: relative;
+  top: 230px;
+  left: 717px;
+}
+
+.cheat {
+  top: 250px;
+}
+
+.output {
+  position: relative;
+  left: 835px;
+  top: 125px;
+}
